@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../images/profile.jpg'
 import { FaBars} from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const Header = () => {
 const mobileMenuBarHandel =() => {
@@ -22,21 +23,21 @@ const mobileMenuBarHandel =() => {
                 </div>
                 <nav className="hidden lg:flex navbar-section basic-4/5">
                     <ul className="flex flex-row space-x-10 text-md text-right text-white font-semibold subpixel-antialiased">
-                        <li className="p-2 text-rose-400">Home</li>
-                        <li className="cursor-pointer hover:text-rose-400 p-2 ">About Me</li>
-                        <li className="cursor-pointer hover:text-rose-400 p-2 ">My work</li>
-                        <li className=" cursor-pointer hover:text-rose-400 p-2 ">Contract</li>
-                        <button className="px-5 py-2 border-2 border-rose-400 rounded hover:bg-rose-400 duration-300 hover:text-white">Hair me</button> 
+                        <li className="p-2 text-rose-400"><Link to="/home">Home</Link></li>
+                        <li className="cursor-pointer  hover:text-rose-400 p-2 focus:border-b-4 border-rose-400 "><Link to="/about">About-Me</Link></li>
+                        <li className="cursor-pointer hover:text-rose-400 p-2 hover:border-b-4 border-rose-400"><Link to="/work">My-Works</Link></li>
+                        <li className=" cursor-pointer hover:text-rose-400 p-2 hover:border-b-4 border-rose-400"><Link to="/contract">Contract</Link></li>
+                        <button className="px-5 py-2 border-2 border-rose-400 rounded hover:bg-rose-400 duration-300 hover:text-white"><Link to="/hireMe">Hire me</Link></button> 
                     </ul>
                 </nav>         
             </div>
             <div className="mobileNav-section hidden mt-5 ">
                 <div className="nav mx-auto border-b-2 border-rose-500">
                     <ul className="w-full text-md text-white text-center flex flex-col gap-2 divide-y-2 divide-rose-400">
-                        <li className="text-rose-400 py-1">Home</li>
-                        <li className="py-1">About me</li>
-                        <li className=" py-1">My work </li>
-                        <li className="py-2">Contract</li>
+                        <li className="text-rose-400 py-1"><Link to="/home">Home</Link></li>
+                        <li className="py-1"><Link to="/about">About-Me</Link></li>
+                        <li className=" py-1"><Link to="/work">My Works</Link></li>
+                        <li className="py-2"><Link to="/contract">Contract</Link></li>
                     </ul>
                 </div>
             </div>

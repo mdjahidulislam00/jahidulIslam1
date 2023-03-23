@@ -1,9 +1,12 @@
 import React from 'react';
-import AboutSectionImage from '../../images/mywebsite-pic.png';
+import Footer from '../Components/Footer/Footer';
+import Header from '../Components/Header/Header';
+import AboutSectionImage from '../images/mywebsite-pic.png'
 
 const AboutMe = () => {
     return (
-        <div className="about-section mx-auto mt-0 bg-slate-900 ">
+        <div>
+            <div className="about-section mx-auto mt-0 bg-slate-900 ">
             <div className="aboutSection-header mt-0 pt-5 pb-12 flex flex-row items-center justify-center space-x-2">
                 <div className="left-line h-[2px] w-20 bg-gray-400 rounded-lg"></div>
                 <div className="text-xl text-rose-400 block font-semibold">About me</div>
@@ -56,7 +59,7 @@ const AboutMe = () => {
                         <h2 className="text-xl font-bold text-rose-400 ml-10">My Skills & Tools</h2>
                         <div className="right-line h-[2px] w-20 mt-4 bg-gray-400 rounded-lg grow mr-10"></div>
                     </div>
-                    <div className="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-10 ">
+                    <div className="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-10 py-10">
                         <div className="webDesign-Section  rounded-lg">
                             <h2 className="text-3xl text-center text-rose-400 font-semibold tracking-wide bg-slate-800 px-10 py-2 rounded-md">Languages</h2>
                             <ul className="text-md text-gray-300 tracking-wider mt-2 font-bold grid grid-cols-3 gap-3 mx-2" >
@@ -107,6 +110,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

@@ -1,16 +1,19 @@
 import React from 'react';
-import workPhoto from '../../images/contractme pic.jpg'
+import Footer from '../Components/Footer/Footer';
+import Header from '../Components/Header/Header';
+import workPhoto from '../images/contractme pic.jpg'
 
-const MyWorkSec = () => {
+const MyWorks = () => {
     return (
-            <div className="myWork-section bg-gray-900 mt-0.5">
+            <div>
+                <div className="myWork-section bg-gray-900 mt-0.5">
                 <div className="myWorkSection-header pt-5 pb-10 flex flex-row items-center justify-center space-x-2">
                     <div className="left-line h-[2px] w-20  bg-rose-600 rounded-lg"></div>
                     <div className="text-xl text-rose-400 block font-semibold">My works</div>
                     <div className="right-line h-[2px] w-20  bg-rose-600 rounded-lg"></div>
                 </div>
                 <div className="myWorkSection-content pb-10">
-                    <div className="container mx-auto overflow-hidden  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
+                    <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
                         <div className="myWorkCart rounded-md bg-gray-800 shadow-xl border-2 border-gray-700 shadow-gray-700 p-3 hover:scale-105 hover:bg-gray-900 duration-700">
                             <div className="cart-image bg-cover rounded-lg p-1 hover:bg-content">
                                 <img className="rounded-md" src={workPhoto} alt="" />
@@ -58,7 +61,8 @@ const MyWorkSec = () => {
                     </div>
                 </div>
             </div>
+            </div>
     );
 };
 
-export default MyWorkSec;
+export default MyWorks;
