@@ -1,7 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope} from "react-icons/fa";
-import Footer from '../Components/Footer/Footer';
-import Header from '../Components/Header/Header';
+import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope,FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import contractSecPic from '../images/profile.png'
 
 const ContractMe = () => {
@@ -19,12 +18,14 @@ const ContractMe = () => {
                             <img class="bg-cover bg-origin-border rounded-lg border-4 border-gray-800" src={contractSecPic} alt=""/>
                             <h2 class="text-white text-3xl font-bold mt-5">Jahidul Islam</h2>
                             <span class="text-gray-200 text-sm">Jr web Developer</span>
-                            <p class="text-lg text-white font-semibold mt-8">Find with me..</p>
+                            <p class="text-lg text-white font-semibold mt-8">Find me on.</p>
                             <div class="socialMedia-section mt-4 flex flex-row md:justify-end lg:justify-center gap-8">
-                                <div class="text-2xl bg-black w-12 h-12 rounded-md shadow-md cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300 "><FaFacebook/></div>
-                                <div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300 "><FaInstagram/></div>
-                                <div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaTwitter/></div>
-                                <div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaEnvelope/></div>
+                                <Link to="https://www.facebook.com/jahid.jony.355" target="_blank"> <div class="text-2xl bg-black w-12 h-12 rounded-md shadow-md cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300 "><FaFacebook/></div></Link>
+                                <Link to= "https://www.instagram.com/jahid.jony.355/" target="_blank"><div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300 "><FaInstagram/></div></Link>
+                                <Link to= "https://twitter.com/Jahidul6767" target="_blank"><div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaTwitter/></div></Link>
+                                <Link to= "https://www.linkedin.com/in/jahidul-islam-885913224/" target="_blank"><div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaLinkedin/></div></Link>
+                                <Link to= "https://github.com/mdjahidulislam00" target="_blank"><div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaGithub/></div></Link>
+                                <a href="mailto:jahidj2255@gmail.com"><div class="text-2xl bg-black w-12 h-12 rounded-md shadow-lg cursor-pointer shadow-gray-700 text-gray-400 flex justify-center items-center hover:text-rose-500 hover:scale-125 duration-300"><FaEnvelope/></div></a>
                             </div>
                         </div>
                     </div>

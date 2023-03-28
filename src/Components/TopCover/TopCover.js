@@ -2,6 +2,7 @@ import React from "react";
 import coverBackground from '../../images/profile.jpg';
 import { FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 import { Link } from "react-router-dom";
+import myCv from '../../All-Files/jahidul islam cv.pdf'
 
 
 const TopCover = () => {
@@ -28,12 +29,12 @@ const TopCover = () => {
                 <Link to ='https://www.linkedin.com/in/jahidul-islam-885913224/'><span className="shadow-lg shadow-slate-600 rounded-full"><FaLinkedin/></span></Link>
               </div>
               <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center ring-2 ring-cyan-400 bg-slate-900 shadow-lg shadow-slate-800 rounded-full  cursor-pointer hover:ring-rose-500  hover:text-4xl hover:scale-125 hover:transition hover:duration-700">
-                <span className="shadow-lg shadow-slate-600 rounded-full"><FaTwitter/></span>
+                <Link to='https://twitter.com/Jahidul6767'> <span className="shadow-lg shadow-slate-600 rounded-full"><FaTwitter/></span></Link>
               </div>
             </div>
-            <button className="w-40 mt-5 px-6 py-3 text-rose-700 font-semibold border-2 border-rose-400 rounded cursor-pointer hover:w-[300px] hover:text-center hover:bg-rose-400 duration-700 hover:text-white">
+            <Link to={myCv} target="_blank"><button className="w-40 mt-5 px-6 py-3 text-rose-700 font-semibold border-2 border-rose-400 rounded cursor-pointer hover:w-[300px] hover:text-center hover:bg-rose-400 duration-700 hover:text-white">
               Download Cv
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

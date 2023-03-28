@@ -24,10 +24,10 @@ const mobileMenuBarHandel =() => {
                 <nav className="hidden lg:flex navbar-section basic-4/5">
                     <ul className="flex flex-row space-x-10 text-md text-right text-white font-semibold subpixel-antialiased">
                         <li className="p-2 text-rose-400"><Link to="/home">Home</Link></li>
-                        <li className="cursor-pointer  hover:text-rose-400 p-2 focus:border-b-4 border-rose-400 "><Link to="/about">About-Me</Link></li>
+                        <li className="cursor-pointer  hover:text-rose-400 p-2 hover:border-b-4 border-rose-400 "><Link to="/about">About-Me</Link></li>
                         <li className="cursor-pointer hover:text-rose-400 p-2 hover:border-b-4 border-rose-400"><Link to="/work">My-Works</Link></li>
                         <li className=" cursor-pointer hover:text-rose-400 p-2 hover:border-b-4 border-rose-400"><Link to="/contract">Contract</Link></li>
-                        <button className="px-5 py-2 border-2 border-rose-400 rounded hover:bg-rose-400 duration-300 hover:text-white"><Link to="/hireMe">Hire me</Link></button> 
+                        <button className="px-5 py-2 border-2 border-rose-400 rounded hover:bg-rose-400 duration-300 hover:text-white active:text-blue"><Link to="/hireMe">Hire me</Link></button> 
                     </ul>
                 </nav>         
             </div>
